@@ -363,7 +363,7 @@
             overflow-x: scroll;
             -webkit-overflow-scrolling: touch;
             /*纵向超出部分将会隐藏，即滚动条部分被挤出可视区域*/
-            /*padding-bottom: 20px;*/
+            padding-bottom: 20px;
         }
         .lateral-sliding::-webkit-scrollbar {
             display: none;
