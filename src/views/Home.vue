@@ -84,46 +84,45 @@
         </div>
 
         <!-- 推荐商家 -->
-        <div class="recommend-merchant pr-3 pl-3">
+        <div class="recommend-merchant pr-3 pl-3 clearfix">
             <div class="text-center recommend-title">
                 <div class="d-inline-flex align-items-center">
                     <hr width="46px" color="#007bff"/>
                     <div class="ml-1 mr-1 font-13">推 荐 商 家</div>
                     <hr width="46px" color="#007bff"/>
-                    <div class="font-10 recommend-more text-999">
-                        <span class="text-bbb">更多</span><i class="iconfont">&#xe6c1;</i>
-                    </div>
+                </div>
+                <div class="font-10 recommend-more text-999 float-right mt-2">
+                    <span class="text-bbb">更多</span><i class="iconfont">&#xe6c1;</i>
                 </div>
             </div>
 
-            <van-row type="flex" justify="space-around" class="text-center font-14">
-                <van-col span="8" class="m-1">
+            <van-row class="text-center font-14" gutter="10">
+                <van-col span="8">
                     <div><img src="../static/images/seckill-good.png" alt="秒杀商品" width="100%" height="auto"></div>
                     <div class="mt-1">平台自营店</div>
                 </van-col>
-                <van-col span="8" class="m-1">
+                <van-col span="8">
                     <div><img src="../static/images/seckill-good.png" alt="秒杀商品" width="100%" height="auto"></div>
                     <div class="mt-1">平台自营店</div>
                 </van-col>
-                <van-col span="8" class="m-1">
+                <van-col span="8">
+                    <div><img src="../static/images/seckill-good.png" alt="秒杀商品" width="100%" height="auto"></div>
+                    <div class="mt-1">平台自营店</div>
+                </van-col>
+                <van-col span="8">
+                    <div><img src="../static/images/seckill-good.png" alt="秒杀商品" width="100%" height="auto"></div>
+                    <div class="mt-1">平台自营店</div>
+                </van-col>
+                <van-col span="8">
+                    <div><img src="../static/images/seckill-good.png" alt="秒杀商品" width="100%" height="auto"></div>
+                    <div class="mt-1">平台自营店</div>
+                </van-col>
+                <van-col span="8">
                     <div><img src="../static/images/seckill-good.png" alt="秒杀商品" width="100%" height="auto"></div>
                     <div class="mt-1">平台自营店</div>
                 </van-col>
             </van-row>
-            <van-row type="flex" justify="space-around" class="text-center font-14">
-                <van-col span="8" class="m-1">
-                    <div><img src="../static/images/seckill-good.png" alt="秒杀商品" width="100%" height="auto"></div>
-                    <div class="mt-1">平台自营店</div>
-                </van-col>
-                <van-col span="8" class="m-1">
-                    <div><img src="../static/images/seckill-good.png" alt="秒杀商品" width="100%" height="auto"></div>
-                    <div class="mt-1">平台自营店</div>
-                </van-col>
-                <van-col span="8" class="m-1">
-                    <div><img src="../static/images/seckill-good.png" alt="秒杀商品" width="100%" height="auto"></div>
-                    <div class="mt-1">平台自营店</div>
-                </van-col>
-            </van-row>
+
         </div>
         
         <!-- 广告2区域 -->
@@ -355,7 +354,6 @@
     .recommend-title{color: #428FE7}
     .more-seckill{color: #FE4070;border: #FE4070 1px solid}
     .recommend-more{
-        position: absolute;right:12px;
         span{position: relative;bottom:0.1rem}
     }
     .recommend-good{
