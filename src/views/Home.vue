@@ -74,7 +74,7 @@
                 </van-col>
                 <van-col span="3" class="bg-white more-seckill d-flex ml-1 mt-1 mb-1">
                     <div class="align-self-center m-auto">
-                        <div class="text-center font-10">
+                        <div class="text-center font-14">
                             更<br/>多<br/>秒<br/>杀<br/>
                             <i class="iconfont">&#xe646;</i>
                         </div>
