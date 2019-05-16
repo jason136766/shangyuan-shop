@@ -96,28 +96,28 @@
                 </div>
             </div>
 
-            <van-row class="text-center font-14" gutter="10">
-                <van-col span="8">
+            <van-row class="text-center font-14" gutter="8">
+                <van-col span="8" class="mb-2">
                     <div><img src="../static/images/seckill-good.png" alt="秒杀商品" width="100%" height="auto"></div>
                     <div class="mt-1">平台自营店</div>
                 </van-col>
-                <van-col span="8">
+                <van-col span="8" class="mb-2">
                     <div><img src="../static/images/seckill-good.png" alt="秒杀商品" width="100%" height="auto"></div>
                     <div class="mt-1">平台自营店</div>
                 </van-col>
-                <van-col span="8">
+                <van-col span="8" class="mb-2">
                     <div><img src="../static/images/seckill-good.png" alt="秒杀商品" width="100%" height="auto"></div>
                     <div class="mt-1">平台自营店</div>
                 </van-col>
-                <van-col span="8">
+                <van-col span="8" class="mb-2">
                     <div><img src="../static/images/seckill-good.png" alt="秒杀商品" width="100%" height="auto"></div>
                     <div class="mt-1">平台自营店</div>
                 </van-col>
-                <van-col span="8">
+                <van-col span="8" class="mb-2">
                     <div><img src="../static/images/seckill-good.png" alt="秒杀商品" width="100%" height="auto"></div>
                     <div class="mt-1">平台自营店</div>
                 </van-col>
-                <van-col span="8">
+                <van-col span="8" class="mb-2">
                     <div><img src="../static/images/seckill-good.png" alt="秒杀商品" width="100%" height="auto"></div>
                     <div class="mt-1">平台自营店</div>
                 </van-col>
@@ -126,7 +126,7 @@
         </div>
         
         <!-- 广告2区域 -->
-        <div class="pr-3 pl-3 mt-2"><img src="../static/images/banner-2.png" alt="广告2" width="100%" height="auto"></div>
+        <div class="pr-3 pl-3"><img src="../static/images/banner-2.png" alt="广告2" width="100%" height="auto"></div>
 
         <!-- 推荐商品 -->
         <div class="recommend-good pr-3 pl-3">
