@@ -129,14 +129,14 @@
         <div class="pr-3 pl-3"><img src="../static/images/banner-2.png" alt="广告2" width="100%" height="auto"></div>
 
         <!-- 推荐商品 -->
-        <div class="recommend-good pr-3 pl-3">
-            <div class="text-center recommend-title">
-                <div class="d-inline-flex align-items-center">
-                    <hr width="46px" color="#007bff"/>
-                    <div class="ml-1 mr-1 font-13">推 荐 商 品</div>
-                    <hr width="46px" color="#007bff"/>
-                </div>
+        <div class="text-center recommend-title pr-3 pl-3">
+            <div class="d-inline-flex align-items-center">
+                <hr width="46px" color="#007bff"/>
+                <div class="ml-1 mr-1 font-13">推 荐 商 品</div>
+                <hr width="46px" color="#007bff"/>
             </div>
+        </div>
+        <div class="recommend-box pr-3 pl-3">
             <div class="lateral-sliding text-left font-13">
                 <div class="good-wrap">
                     <div span="7" class="m-1 good">
@@ -177,7 +177,7 @@
         <div class="pr-3 pl-3 mt-3 mb-3"><img src="../static/images/banner-3.png" alt="广告3" width="100%" height="auto"></div>
 
         <!-- 推荐商品 -->
-        <div class="recommend-good pr-3 pl-3">
+        <div class="recommend-box pr-3 pl-3">
             <div class="lateral-sliding text-left font-13">
                 <div class="good-wrap">
                     <div span="7" class="m-1 good">
@@ -356,18 +356,23 @@
     .recommend-more{
         span{position: relative;bottom:0.1rem}
     }
-    .recommend-good{
-        .lateral-sliding{
-            display: flex;
-            overflow-y: hidden;
-            overflow-x: scroll;
-        }
+    .recommend-box{
+        height:9.5rem;
+        overflow: hidden;
         .lateral-sliding::-webkit-scrollbar {
             display: none;
         }
+        .lateral-sliding{
+            height: 100%;
+            overflow-y: hidden;
+            overflow-x: scroll;
+            -webkit-overflow-scrolling: touch;
+            padding-bottom: 20px;
+        }
+
         .good-wrap{
             display: flex;
-            -webkit-overflow-scrolling: touch;
+            height: 100%;
         }
         .good{
             width:91px;
