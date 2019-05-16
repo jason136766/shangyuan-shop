@@ -222,8 +222,28 @@
         <van-tabs class="mt-3 pr-3 pl-3 font-13 goods-tab mb-5" swipeable animated :line-height=lineHeight color="#4DA9FF" title-active-color="#4DA9FF">
             <van-tab title="全部">
                 <van-row class="pt-2 pb-2" gutter="6">
-                    <van-col span="12" class="mb-2">
+                    <van-col span="12" class="mb-3">
                         <div><img src="../static/images/banner-4.png" alt="广告2" width="100%" height="auto"></div>
+                    </van-col>
+                    <van-col span="12" class="mb-3 good">
+                        <div class="bg-white">
+                            <img src="../static/images/good.png" alt="广告2" width="100%" height="auto">
+                            <div class="pl-2 pr-2 pb-1">
+                                <div class="line-ellipsis">拉夏贝尔2017春装新款 复古拼接五分袖短款假两件小衫哈哈哈...</div>
+                                <div class="text-primary">￥699.00</div>
+                                <div class="font-10 text-danger">抵扣零钱：260币</div>
+                            </div>
+                        </div>
+                    </van-col>
+                    <van-col span="12" class="mb-3 good">
+                        <div class="bg-white">
+                            <img src="../static/images/good.png" alt="广告2" width="100%" height="auto">
+                            <div class="pl-2 pr-2 pb-2">
+                                <div class="line-ellipsis">拉夏贝尔2017春装新款 复古拼接五分袖短款假两件小衫哈哈哈...</div>
+                                <div class="text-primary">￥699.00</div>
+                                <div class="font-10 text-danger">抵扣零钱：260币</div>
+                            </div>
+                        </div>
                     </van-col>
                     <van-col span="12" class="mb-3 good">
                         <div class="bg-white">
