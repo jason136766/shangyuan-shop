@@ -358,19 +358,16 @@
     }
     .recommend-good{
         .lateral-sliding{
-            height: 9.5rem;
             display: flex;
             overflow-y: hidden;
             overflow-x: scroll;
-            -webkit-overflow-scrolling: touch;
-            /*纵向超出部分将会隐藏，即滚动条部分被挤出可视区域*/
-            padding-bottom: 20px;
         }
         .lateral-sliding::-webkit-scrollbar {
             display: none;
         }
         .good-wrap{
             display: flex;
+            -webkit-overflow-scrolling: touch;
         }
         .good{
             width:91px;
