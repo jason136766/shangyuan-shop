@@ -358,6 +358,7 @@
     }
     .recommend-good{
         .lateral-sliding{
+            height: 9.5rem;
             display: flex;
             overflow-y: hidden;
             overflow-x: scroll;
