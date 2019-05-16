@@ -367,12 +367,9 @@
         .lateral-sliding{
             overflow-y: hidden;
             overflow-x: scroll;
-            -webkit-overflow-scrolling: touch;
         }
-        /* 设置滚动条的样式 */
         .lateral-sliding::-webkit-scrollbar {
-            width: 0;
-            height: 0;
+            display: none;
         }
         .good-wrap{
             display: flex;
