@@ -1,11 +1,16 @@
 <template>
     <!-- 底部导航 -->
-    <van-tabbar class="text-center footer" :z-index = zIndex>
-        <van-tabbar-item>
+    <van-tabbar
+        v-model="active"
+        active-color="#4DA9FF"
+        class="text-center footer"
+        :z-index="zIndex"
+    >
+        <van-tabbar-item to="/">
             <div class="iconfont">&#xe677;</div>
             <div class="mt-2 pb-1">首页</div>
         </van-tabbar-item>
-        <van-tabbar-item>
+        <van-tabbar-item to="mall">
             <div class="iconfont">&#xe642;</div>
             <div class="mt-2 pb-1">商圈</div>
         </van-tabbar-item>
@@ -28,9 +33,10 @@
         name: "Footer",
         data() {
             return {
+                active: 0,
                 zIndex: 100,
             }
-        }
+        },
     }
 </script>
 
