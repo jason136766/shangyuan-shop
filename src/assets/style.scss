@@ -3,6 +3,7 @@
 .font-13{font-size: 13px}
 .font-14{font-size: 14px}
 .font-16{font-size: 16px}
+.font-18{font-size: 18px}
 .text-999{color: #999}
 .text-bbb{color: #bbb}
 
@@ -14,9 +15,15 @@
   -webkit-box-orient: vertical;
 }
 
-.home header{
+header{
   .van-field__control,.van-field__control::placeholder{
     color:white;
+  }
+}
+.mall header{
+  .van-field__control,.van-field__control::placeholder{
+    font-weight: bold;
+    letter-spacing:8px
   }
 }
 

@@ -37,6 +37,11 @@
                 zIndex: 100,
             }
         },
+        watch: {
+          '$route'(to) {
+              this.active = to.meta.index
+          }
+        },
     }
 </script>
 

@@ -3,7 +3,7 @@
         <header class="text-white">
             <van-row type="flex" justify="space-between" class="text-center">
                 <van-col span="4">
-                    <div><i class="iconfont">&#xe65d;</i></div>
+                    <div><i class="iconfont font-18">&#xe65d;</i></div>
                     <div class="font-10">会员码</div>
                 </van-col>
                 <van-col span="16" class="no-gutters">
@@ -18,7 +18,7 @@
                     </van-search>
                 </van-col>
                 <van-col span="4">
-                    <div><i class="iconfont">&#xe763;</i></div>
+                    <div><i class="iconfont font-18">&#xe763;</i></div>
                     <div class="font-10">信息</div>
                 </van-col>
             </van-row>
@@ -32,12 +32,8 @@
             </van-row>
         </header>
 
-        <!-- banner 轮播-->
-        <van-swipe :autoplay="3000" class="text-center banner">
-            <van-swipe-item v-for="(image, index) in images" :key="index">
-                <img :src="image" width="92%" height="auto"/>
-            </van-swipe-item>
-        </van-swipe>
+        <!-- banner 轮播 -->
+        <HeaderBanner :slides="slides"/>
 
         <!-- 优惠券 -->
         <div class="text-center">
@@ -226,28 +222,31 @@
 </template>
 
 <script>
-    import Footer from '@/components/layouts/Footer'
+    import HeaderBanner from '@/components/HeaderBanner'
     import RecommendGoods from '@/components/RecommendGoods'
+    import Footer from '@/components/layouts/Footer'
     export default {
         name: "Home",
         components: {
+          HeaderBanner,
+          RecommendGoods,
           Footer,
-          RecommendGoods
+
         },
         data() {
             return {
                 lineHeight: 2,
                 searchIcon: '\ue625 商品/店铺搜索',
+                slides: [
+                    require('@/static/images/swipe-banner.png'),
+                    require('@/static/images/swipe-banner.png')
+                ],
                 categorys: [
                     { url:require('@/static/images/category.png'),name:'平台自营' },
                     { url:require('@/static/images/category.png'),name:'平台自营' },
                     { url:require('@/static/images/category.png'),name:'平台自营' },
                     { url:require('@/static/images/category.png'),name:'平台自营' },
                     { url:require('@/static/images/category.png'),name:'平台自营' },
-                ],
-                images: [
-                    require('@/static/images/swipe-banner.png'),
-                    require('@/static/images/swipe-banner.png')
                 ],
             }
         },
