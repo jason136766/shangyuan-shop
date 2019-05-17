@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-light">
+    <div class="bg-light home">
         <header class="text-white">
             <van-row type="flex" justify="space-between" class="text-center">
                 <van-col span="4">
@@ -13,7 +13,6 @@
                             class="iconfont search"
                             :placeholder="searchIcon"
                             background="none"
-
                     >
                         <div slot="left-icon"></div>
                     </van-search>
@@ -36,13 +35,13 @@
         <!-- banner 轮播-->
         <van-swipe :autoplay="3000" class="text-center banner">
             <van-swipe-item v-for="(image, index) in images" :key="index">
-                <img v-lazy="image" width="92%" height="auto"/>
+                <img :src="image" width="92%" height="auto"/>
             </van-swipe-item>
         </van-swipe>
 
         <!-- 优惠券 -->
         <div class="text-center">
-            <img src="../static/images/coupon.png" alt="优惠券" width="92%" height="auto" >
+            <img src="@/static/images/coupon.png" alt="优惠券" width="92%" height="auto" >
         </div>
 
         <!-- 秒杀商品 -->
@@ -57,7 +56,7 @@
 
             <van-row type="flex" justify="space-around">
                 <van-col span="10" class="bg-white m-1">
-                    <div><img src="../static/images/seckill-good.png" alt="秒杀商品" width="100%" height="auto"></div>
+                    <div><img src="@/static/images/seckill-good.png" alt="秒杀商品" width="100%" height="auto"></div>
                     <div class="p-1 pb-2 font-13">
                         <div class="font-10 van-ellipsis">百丽2017春时尚小白哈哈哈</div>
                         <span class="text-primary mr-1">￥699.00</span>
@@ -65,7 +64,7 @@
                     </div>
                 </van-col>
                 <van-col span="10" class="bg-white m-1">
-                    <div><img src="../static/images/seckill-good.png" alt="秒杀商品" width="100%" height="auto"></div>
+                    <div><img src="@/static/images/seckill-good.png" alt="秒杀商品" width="100%" height="auto"></div>
                     <div class="p-1 pb-2 font-13">
                         <div class="font-10 van-ellipsis">百丽2017春时尚小白哈哈哈</div>
                         <span class="text-primary mr-1">￥699.00</span>
@@ -98,35 +97,35 @@
 
             <van-row class="text-center font-14" gutter="8">
                 <van-col span="8" class="mb-2">
-                    <div><img src="../static/images/seckill-good.png" alt="秒杀商品" width="100%" height="auto"></div>
+                    <div><img src="@/static/images/seckill-good.png" alt="秒杀商品" width="100%" height="auto"></div>
                     <div class="mt-1">平台自营店</div>
                 </van-col>
                 <van-col span="8" class="mb-2">
-                    <div><img src="../static/images/seckill-good.png" alt="秒杀商品" width="100%" height="auto"></div>
+                    <div><img src="@/static/images/seckill-good.png" alt="秒杀商品" width="100%" height="auto"></div>
                     <div class="mt-1">平台自营店</div>
                 </van-col>
                 <van-col span="8" class="mb-2">
-                    <div><img src="../static/images/seckill-good.png" alt="秒杀商品" width="100%" height="auto"></div>
+                    <div><img src="@/static/images/seckill-good.png" alt="秒杀商品" width="100%" height="auto"></div>
                     <div class="mt-1">平台自营店</div>
                 </van-col>
                 <van-col span="8" class="mb-2">
-                    <div><img src="../static/images/seckill-good.png" alt="秒杀商品" width="100%" height="auto"></div>
+                    <div><img src="@/static/images/seckill-good.png" alt="秒杀商品" width="100%" height="auto"></div>
                     <div class="mt-1">平台自营店</div>
                 </van-col>
                 <van-col span="8" class="mb-2">
-                    <div><img src="../static/images/seckill-good.png" alt="秒杀商品" width="100%" height="auto"></div>
+                    <div><img src="@/static/images/seckill-good.png" alt="秒杀商品" width="100%" height="auto"></div>
                     <div class="mt-1">平台自营店</div>
                 </van-col>
                 <van-col span="8" class="mb-2">
-                    <div><img src="../static/images/seckill-good.png" alt="秒杀商品" width="100%" height="auto"></div>
+                    <div><img src="@/static/images/seckill-good.png" alt="秒杀商品" width="100%" height="auto"></div>
                     <div class="mt-1">平台自营店</div>
                 </van-col>
             </van-row>
 
         </div>
-        
+
         <!-- 广告2区域 -->
-        <div class="pr-3 pl-3"><img src="../static/images/banner-2.png" alt="广告2" width="100%" height="auto"></div>
+        <div class="pr-3 pl-3"><img src="@/static/images/banner-2.png" alt="广告2" width="100%" height="auto"></div>
 
         <!-- 推荐商品 -->
         <div class="text-center recommend-title pr-3 pl-3">
@@ -136,86 +135,16 @@
                 <hr width="46px" color="#007bff"/>
             </div>
         </div>
-        <div class="recommend-box pr-3 pl-3">
-            <div class="lateral-sliding text-left font-13">
-                <div class="good-wrap">
-                    <div span="7" class="m-1 good">
-                        <div><img src="../static/images/recommend-good.png" alt="推荐商品" width="100%" height="auto"></div>
-                        <div class="mt-1 van-ellipsis">药妆什么都值得买</div>
-                        <div class="text-primary">￥590</div>
-                        <div class="text-danger font-10">抵扣零钱：260币</div>
-                    </div>
-                    <div span="7" class="m-1 good">
-                        <div><img src="../static/images/recommend-good.png" alt="推荐商品" width="100%" height="auto"></div>
-                        <div class="mt-1 van-ellipsis">药妆什么都值得买</div>
-                        <div class="text-primary">￥590</div>
-                        <div class="text-danger font-10">抵扣零钱：260币</div>
-                    </div>
-                    <div span="7" class="m-1 good">
-                        <div><img src="../static/images/recommend-good.png" alt="推荐商品" width="100%" height="auto"></div>
-                        <div class="mt-1 van-ellipsis">药妆什么都值得买</div>
-                        <div class="text-primary">￥590</div>
-                        <div class="text-danger font-10">抵扣零钱：260币</div>
-                    </div>
-                    <div span="7" class="m-1 good">
-                        <div><img src="../static/images/recommend-good.png" alt="推荐商品" width="100%" height="auto"></div>
-                        <div class="mt-1 van-ellipsis">药妆什么都值得买</div>
-                        <div class="text-primary">￥590</div>
-                        <div class="text-danger font-10">抵扣零钱：260币</div>
-                    </div>
-                    <div span="7" class="m-1 good">
-                        <div><img src="../static/images/recommend-good.png" alt="推荐商品" width="100%" height="auto"></div>
-                        <div class="mt-1 van-ellipsis">药妆什么都值得买</div>
-                        <div class="text-primary">￥590</div>
-                        <div class="text-danger font-10">抵扣零钱：260币</div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <RecommendGoods/>
 
         <!-- 广告3区域 -->
-        <div class="pr-3 pl-3 mt-3 mb-3"><img src="../static/images/banner-3.png" alt="广告3" width="100%" height="auto"></div>
+        <div class="pr-3 pl-3 mt-3 mb-3"><img src="@/static/images/banner-3.png" alt="广告3" width="100%" height="auto"></div>
 
         <!-- 推荐商品 -->
-        <div class="recommend-box pr-3 pl-3">
-            <div class="lateral-sliding text-left font-13">
-                <div class="good-wrap">
-                    <div span="7" class="m-1 good">
-                        <div><img src="../static/images/recommend-good1.png" alt="推荐商品" width="100%" height="auto"></div>
-                        <div class="mt-1 van-ellipsis">药妆什么都值得买</div>
-                        <div class="text-primary">￥590</div>
-                        <div class="text-danger font-10">抵扣零钱：260币</div>
-                    </div>
-                    <div span="7" class="m-1 good">
-                        <div><img src="../static/images/recommend-good1.png" alt="推荐商品" width="100%" height="auto"></div>
-                        <div class="mt-1 van-ellipsis">药妆什么都值得买</div>
-                        <div class="text-primary">￥590</div>
-                        <div class="text-danger font-10">抵扣零钱：260币</div>
-                    </div>
-                    <div span="7" class="m-1 good">
-                        <div><img src="../static/images/recommend-good1.png" alt="推荐商品" width="100%" height="auto"></div>
-                        <div class="mt-1 van-ellipsis">药妆什么都值得买</div>
-                        <div class="text-primary">￥590</div>
-                        <div class="text-danger font-10">抵扣零钱：260币</div>
-                    </div>
-                    <div span="7" class="m-1 good">
-                        <div><img src="../static/images/recommend-good1.png" alt="推荐商品" width="100%" height="auto"></div>
-                        <div class="mt-1 van-ellipsis">药妆什么都值得买</div>
-                        <div class="text-primary">￥590</div>
-                        <div class="text-danger font-10">抵扣零钱：260币</div>
-                    </div>
-                    <div span="7" class="m-1 good">
-                        <div><img src="../static/images/recommend-good1.png" alt="推荐商品" width="100%" height="auto"></div>
-                        <div class="mt-1 van-ellipsis">药妆什么都值得买</div>
-                        <div class="text-primary">￥590</div>
-                        <div class="text-danger font-10">抵扣零钱：260币</div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <RecommendGoods/>
 
         <!-- 广告4区域 -->
-        <div class="pr-3 pl-3 mt-2"><img src="../static/images/banner-2.png" alt="广告2" width="100%" height="auto"></div>
+        <div class="pr-3 pl-3 mt-2"><img src="@/static/images/banner-2.png" alt="广告2" width="100%" height="auto"></div>
 
         <!-- 商品分类 -->
         <van-tabs class="mt-3 pr-3 pl-3 font-13 goods-tab mb-5" swipeable animated :line-height=lineHeight color="#4DA9FF" title-active-color="#4DA9FF">
@@ -223,7 +152,7 @@
                 <van-row class="pt-2 pb-2" gutter="6">
                     <van-col span="12" class="mb-2 good">
                         <div class="bg-white">
-                            <img src="../static/images/good.png" alt="广告2" width="100%" height="auto">
+                            <img src="@/static/images/good.png" alt="广告2" width="100%" height="auto">
                             <div class="pl-2 pr-2 pb-1">
                                 <div class="line-ellipsis">拉夏贝尔2017春装新款 复古拼接五分袖短款假两件小衫哈哈哈...</div>
                                 <div class="text-primary">￥699.00</div>
@@ -233,7 +162,7 @@
                     </van-col>
                     <van-col span="12" class="mb-2 good">
                         <div class="bg-white">
-                            <img src="../static/images/good.png" alt="广告2" width="100%" height="auto">
+                            <img src="@/static/images/good.png" alt="广告2" width="100%" height="auto">
                             <div class="pl-2 pr-2 pb-1">
                                 <div class="line-ellipsis">拉夏贝尔2017春装新款 复古拼接五分袖短款假两件小衫哈哈哈...</div>
                                 <div class="text-primary">￥699.00</div>
@@ -243,7 +172,7 @@
                     </van-col>
                     <van-col span="12" class="mb-2 good">
                         <div class="bg-white">
-                            <img src="../static/images/good.png" alt="广告2" width="100%" height="auto">
+                            <img src="@/static/images/good.png" alt="广告2" width="100%" height="auto">
                             <div class="pl-2 pr-2 pb-2">
                                 <div class="line-ellipsis">拉夏贝尔2017春装新款 复古拼接五分袖短款假两件小衫哈哈哈...</div>
                                 <div class="text-primary">￥699.00</div>
@@ -253,7 +182,7 @@
                     </van-col>
                     <van-col span="12" class="mb-2 good">
                         <div class="bg-white">
-                            <img src="../static/images/good.png" alt="广告2" width="100%" height="auto">
+                            <img src="@/static/images/good.png" alt="广告2" width="100%" height="auto">
                             <div class="pl-2 pr-2 pb-2">
                                 <div class="line-ellipsis">拉夏贝尔2017春装新款 复古拼接五分袖短款假两件小衫哈哈哈...</div>
                                 <div class="text-primary">￥699.00</div>
@@ -263,7 +192,7 @@
                     </van-col>
                     <van-col span="12" class="mb-2 good">
                         <div class="bg-white">
-                            <img src="../static/images/good.png" alt="广告2" width="100%" height="auto">
+                            <img src="@/static/images/good.png" alt="广告2" width="100%" height="auto">
                             <div class="pl-2 pr-2 pb-2">
                                 <div class="line-ellipsis">拉夏贝尔2017春装新款 复古拼接五分袖短款假两件小衫哈哈哈...</div>
                                 <div class="text-primary">￥699.00</div>
@@ -273,7 +202,7 @@
                     </van-col>
                     <van-col span="12" class="mb-2 good">
                         <div class="bg-white">
-                            <img src="../static/images/good.png" alt="广告2" width="100%" height="auto">
+                            <img src="@/static/images/good.png" alt="广告2" width="100%" height="auto">
                             <div class="pl-2 pr-2 pb-2">
                                 <div class="line-ellipsis">拉夏贝尔2017春装新款 复古拼接五分袖短款假两件小衫哈哈哈...</div>
                                 <div class="text-primary">￥699.00</div>
@@ -290,52 +219,35 @@
             <van-tab title="联盟商家">联盟商家</van-tab>
         </van-tabs>
 
-        <!-- 底部导航 -->
-        <van-tabbar class="text-center footer" >
-            <van-tabbar-item>
-                <div class="iconfont">&#xe677;</div>
-                <div class="mt-2 pb-1">首页</div>
-            </van-tabbar-item>
-            <van-tabbar-item>
-                <div class="iconfont">&#xe642;</div>
-                <div class="mt-2 pb-1">商圈</div>
-            </van-tabbar-item>
-            <van-tabbar-item>
-                <div class="iconfont cart rounded-circle text-white">&#xe767;</div>
-            </van-tabbar-item>
-            <van-tabbar-item>
-                <div class="iconfont">&#xe68e;</div>
-                <div class="mt-2 pb-1">发现</div>
-            </van-tabbar-item>
-            <van-tabbar-item>
-                <div class="iconfont">&#xe764;</div>
-                <div class="mt-2 pb-1">我的</div>
-            </van-tabbar-item>
-        </van-tabbar>
-
-
+        <Footer/>
     </div>
 
 
 </template>
 
 <script>
+    import Footer from '@/components/layouts/Footer'
+    import RecommendGoods from '@/components/RecommendGoods'
     export default {
         name: "Home",
+        components: {
+          Footer,
+          RecommendGoods
+        },
         data() {
             return {
                 lineHeight: 2,
                 searchIcon: '\ue625 商品/店铺搜索',
                 categorys: [
-                    { url:require('../static/images/category.png'),name:'平台自营' },
-                    { url:require('../static/images/category.png'),name:'平台自营' },
-                    { url:require('../static/images/category.png'),name:'平台自营' },
-                    { url:require('../static/images/category.png'),name:'平台自营' },
-                    { url:require('../static/images/category.png'),name:'平台自营' },
+                    { url:require('@/static/images/category.png'),name:'平台自营' },
+                    { url:require('@/static/images/category.png'),name:'平台自营' },
+                    { url:require('@/static/images/category.png'),name:'平台自营' },
+                    { url:require('@/static/images/category.png'),name:'平台自营' },
+                    { url:require('@/static/images/category.png'),name:'平台自营' },
                 ],
                 images: [
-                    require('../static/images/swipe-banner.png'),
-                    require('../static/images/swipe-banner.png')
+                    require('@/static/images/swipe-banner.png'),
+                    require('@/static/images/swipe-banner.png')
                 ],
             }
         },
@@ -363,47 +275,5 @@
     .recommend-more{
         span{position: relative;bottom:0.1rem}
     }
-    .recommend-box{
-        .lateral-sliding{
-            overflow-y: hidden;
-            overflow-x: scroll;
-        }
-        .lateral-sliding::-webkit-scrollbar {
-            display: none;
-        }
-        .good-wrap{
-            display: flex;
-        }
-        .good{
-            width:91px;
-            display: inline-block;
-        }
-    }
 
-
-
-    .goods-tab .good{
-        border-bottom-right-radius:10px;
-        border-bottom-left-radius:10px;
-    }
-    .footer .cart{
-        width: 55px;
-        height: 55px;
-        position: relative;
-        top:-0.8rem;
-        background-color: #64B4FF;
-        font-size: 2rem;
-        line-height: 55px;
-        z-index: 1;
-    }
-    @media (max-width: 350px){
-        .recommend-box .good{
-            width:80px;
-        }
-    }
-    @media (min-width: 400px) and (max-width: 500px){
-        .recommend-box .good{
-            width:105px;
-        }
-    }
 </style>

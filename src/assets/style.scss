@@ -13,12 +13,14 @@
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
-header{
+
+.home header{
   .van-field__control,.van-field__control::placeholder{
     color:white;
   }
 }
-.banner{
+
+.home .banner{
   margin-top:-5.2rem;
   .van-swipe__indicators{
     left: 90% !important;
