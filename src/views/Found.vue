@@ -2,19 +2,19 @@
     <div class="bg-light found">
         <header>
             <div class="text-white top">
-                <div class="code"><i class="iconfont rounded-circle icon font-18">&#xe600;</i></div>
+                <div class="code"><i class="iconfont rounded-circle icon font-20">&#xe600;</i></div>
                 <div class="middle-search">
                     <van-search
                             shape="round"
-                            input-align="center"
                             class="iconfont search"
-                            :placeholder="searchIcon"
                             background="none"
                     >
-                        <div slot="left-icon"></div>
+                        <div slot="left-icon">
+                            <i class="iconfont pl-1 text-white">&#xe61b;</i>
+                        </div>
                     </van-search>
                 </div>
-                <div class="msg"><i class="iconfont rounded-circle icon font-18">&#xe763;</i></div>
+                <div class="msg"><i class="iconfont rounded-circle icon font-20">&#xe763;</i></div>
             </div>
             
             <div><img src="@/static/images/found-head-bg.png" alt=""></div>
@@ -25,17 +25,12 @@
 <script>
     export default {
         name: "Found",
-        data() {
-            return {
-                searchIcon: '\ue637 上海 \ue61b',
-            }
-        }
     }
 </script>
 
 <style scoped lang="scss">
     .van-search__content, .search {
-        background-color: rgba(255, 255, 255, 0.4);
+        background-color: rgba(255, 255, 255, 0.2);
         margin-top: 3px;
     }
 

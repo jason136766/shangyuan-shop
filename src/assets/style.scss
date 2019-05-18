@@ -6,6 +6,7 @@
 .font-15{font-size: 15px}
 .font-16{font-size: 16px}
 .font-18{font-size: 18px}
+.font-20{font-size: 20px !important}
 .text-999{color: #999}
 .text-bbb{color: #bbb}
 
@@ -20,12 +21,14 @@
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
-
-header{
-  .van-field__control,.van-field__control::placeholder{
-    color:white;
+.home,.mall,.found{
+  header{
+    .van-field__control,.van-field__control::placeholder{
+      color:white;
+    }
   }
 }
+
 
 /*---- 首页 ---*/
 .home {
@@ -57,9 +60,9 @@ header{
       border-width: 0;
     }
   }
-
-
 }
+
+/*--- 发现 ---*/
 
 
 
