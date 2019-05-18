@@ -1,6 +1,6 @@
 <template>
-    <div class="recommend-box pr-3 pl-3">
-        <div class="lateral-sliding text-left font-13">
+    <div class="recommend-box pr-3 pl-3 overflow-hidden">
+        <div class="lateral-sliding text-left font-13 overflow-auto">
             <div class="good-wrap">
                 <div span="7" class="m-1 good">
                     <div><img src="../static/images/recommend-good.png" alt="推荐商品" width="100%" height="auto"></div>
@@ -45,15 +45,11 @@
 
 <style scoped lang="scss">
     .recommend-box{
+        height: 10rem;
         .lateral-sliding{
-            overflow-y: hidden;
-            overflow-x: scroll;
-        }
-        .lateral-sliding::-webkit-scrollbar {
-            display: none;
-        }
-        .good-wrap{
-            display: flex;
+            height: 15rem;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch
         }
         .good{
             width:91px;
@@ -65,13 +61,20 @@
         border-bottom-left-radius:10px;
     }
     @media (max-width: 350px){
-        .recommend-box .good{
-            width:80px;
+        .recommend-box{
+            height: 9rem;
+            .good{
+                width:80px;
+            }
         }
     }
     @media (min-width: 400px) and (max-width: 500px){
-        .recommend-box .good{
-            width:105px;
+        .recommend-box {
+            height: 11rem;
+            .good{
+                width:105px;
+            }
         }
+
     }
 </style>

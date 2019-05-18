@@ -44,8 +44,14 @@ header{
     }
 
   }
-  .tab .van-hairline--top-bottom::after{
-    border-width: 0;
+
+  .tab{
+    .van-hairline--top-bottom{
+      height: 35px;
+    }
+    .van-hairline--top-bottom::after{
+      border-width: 0;
+    }
   }
 }
 

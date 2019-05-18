@@ -134,7 +134,7 @@
         <RecommendGoods/>
 
         <!-- 广告3区域 -->
-        <div class="pr-3 pl-3 mt-3 mb-3"><img src="@/static/images/banner-3.png" alt="广告3" width="100%" height="auto"></div>
+        <div class="pr-3 pl-3 mt-2 mb-3"><img src="@/static/images/banner-3.png" alt="广告3" width="100%" height="auto"></div>
 
         <!-- 推荐商品 -->
         <RecommendGoods/>
