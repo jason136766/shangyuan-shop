@@ -27,12 +27,15 @@ header{
 }
 
 /*---- 首页 ---*/
-.home .banner{
-  margin-top:-5.2rem;
-  .van-swipe__indicators{
-    left: 90% !important;
-    bottom: 11%;
+.home {
+  .banner{
+    margin-top:-5.2rem;
+    .van-swipe__indicators{
+      left: 90% !important;
+      bottom: 11%;
+    }
   }
+
 }
 
 /*---- 商圈 ---*/

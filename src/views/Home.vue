@@ -147,9 +147,9 @@
             <van-tab title="全部">
                 <van-row class="pt-2 pb-2" gutter="6">
                     <van-col span="12" class="mb-2 good">
-                        <div class="bg-white">
+                        <div class="bg-white rounded-lg">
                             <img src="@/static/images/good.png" alt="广告2" width="100%" height="auto">
-                            <div class="pl-2 pr-2 pb-1">
+                            <div class="pl-2 pr-2 pb-1 mt-1">
                                 <div class="line-ellipsis">拉夏贝尔2017春装新款 复古拼接五分袖短款假两件小衫哈哈哈...</div>
                                 <div class="text-primary">￥699.00</div>
                                 <div class="font-10 text-danger">抵扣零钱：260币</div>
@@ -157,9 +157,9 @@
                         </div>
                     </van-col>
                     <van-col span="12" class="mb-2 good">
-                        <div class="bg-white">
+                        <div class="bg-white rounded-lg">
                             <img src="@/static/images/good.png" alt="广告2" width="100%" height="auto">
-                            <div class="pl-2 pr-2 pb-1">
+                            <div class="pl-2 pr-2 pb-1 mt-1">
                                 <div class="line-ellipsis">拉夏贝尔2017春装新款 复古拼接五分袖短款假两件小衫哈哈哈...</div>
                                 <div class="text-primary">￥699.00</div>
                                 <div class="font-10 text-danger">抵扣零钱：260币</div>
@@ -167,9 +167,9 @@
                         </div>
                     </van-col>
                     <van-col span="12" class="mb-2 good">
-                        <div class="bg-white">
+                        <div class="bg-white rounded-lg">
                             <img src="@/static/images/good.png" alt="广告2" width="100%" height="auto">
-                            <div class="pl-2 pr-2 pb-2">
+                            <div class="pl-2 pr-2 pb-2 mt-1">
                                 <div class="line-ellipsis">拉夏贝尔2017春装新款 复古拼接五分袖短款假两件小衫哈哈哈...</div>
                                 <div class="text-primary">￥699.00</div>
                                 <div class="font-10 text-danger">抵扣零钱：260币</div>
@@ -177,9 +177,9 @@
                         </div>
                     </van-col>
                     <van-col span="12" class="mb-2 good">
-                        <div class="bg-white">
+                        <div class="bg-white rounded-lg">
                             <img src="@/static/images/good.png" alt="广告2" width="100%" height="auto">
-                            <div class="pl-2 pr-2 pb-2">
+                            <div class="pl-2 pr-2 pb-2 mt-1">
                                 <div class="line-ellipsis">拉夏贝尔2017春装新款 复古拼接五分袖短款假两件小衫哈哈哈...</div>
                                 <div class="text-primary">￥699.00</div>
                                 <div class="font-10 text-danger">抵扣零钱：260币</div>
@@ -187,9 +187,9 @@
                         </div>
                     </van-col>
                     <van-col span="12" class="mb-2 good">
-                        <div class="bg-white">
+                        <div class="bg-white rounded-lg">
                             <img src="@/static/images/good.png" alt="广告2" width="100%" height="auto">
-                            <div class="pl-2 pr-2 pb-2">
+                            <div class="pl-2 pr-2 pb-2 mt-1">
                                 <div class="line-ellipsis">拉夏贝尔2017春装新款 复古拼接五分袖短款假两件小衫哈哈哈...</div>
                                 <div class="text-primary">￥699.00</div>
                                 <div class="font-10 text-danger">抵扣零钱：260币</div>
@@ -197,9 +197,9 @@
                         </div>
                     </van-col>
                     <van-col span="12" class="mb-2 good">
-                        <div class="bg-white">
+                        <div class="bg-white rounded-lg">
                             <img src="@/static/images/good.png" alt="广告2" width="100%" height="auto">
-                            <div class="pl-2 pr-2 pb-2">
+                            <div class="pl-2 pr-2 pb-2 mt-1">
                                 <div class="line-ellipsis">拉夏贝尔2017春装新款 复古拼接五分袖短款假两件小衫哈哈哈...</div>
                                 <div class="text-primary">￥699.00</div>
                                 <div class="font-10 text-danger">抵扣零钱：260币</div>
@@ -274,5 +274,4 @@
     .recommend-more{
         span{position: relative;bottom:0.1rem}
     }
-
 </style>
