@@ -16,5 +16,14 @@ export default [
             index: 1,
             showFooter: true,
         }
+    },
+    {
+        path: '/found',
+        name: 'Found',
+        component: () => import('@/views/Found'),
+        meta: {
+            index: 2,
+            showFooter: true,
+        }
     }
 ]

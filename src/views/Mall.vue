@@ -112,9 +112,9 @@
             <div class="pt-3 pb-2 bg-white ml-3 mr-3 mb-3 merchants rounded-lg">
                 <van-row class="mb-2">
                     <van-col span="6">
-                        <img src="@/static/images/merchant.png" alt="商店">
+                        <img src="@/static/images/merchant.png" alt="商店" width="100%" height="auto">
                     </van-col>
-                    <van-col span="13" class="font-10">
+                    <van-col span="13" class="font-10 pl-2">
                         <div class="font-14 pl-1">世纪联华</div>
                         <div>
                             <div class="mt-1 pl-1 attr">
@@ -149,9 +149,9 @@
             <div class="pt-3 pb-2 bg-white ml-3 mr-3 mb-3 merchants rounded-lg">
                 <van-row class="mb-2">
                     <van-col span="6">
-                        <img src="@/static/images/merchant.png" alt="商店">
+                        <img src="@/static/images/merchant.png" alt="商店" width="100%" height="auto">
                     </van-col>
-                    <van-col span="13" class="font-10">
+                    <van-col span="13" class="font-10 pl-2">
                         <div class="font-14 pl-1">世纪联华</div>
                         <div>
                             <div class="mt-1 pl-1 attr">
@@ -186,9 +186,9 @@
             <div class="pt-3 pb-2 bg-white ml-3 mr-3 mb-3 merchants rounded-lg">
                 <van-row class="mb-2">
                     <van-col span="6">
-                        <img src="@/static/images/merchant.png" alt="商店">
+                        <img src="@/static/images/merchant.png" alt="商店" width="100%" height="auto">
                     </van-col>
-                    <van-col span="13" class="font-10">
+                    <van-col span="13" class="font-10 pl-2">
                         <div class="font-14 pl-1">世纪联华</div>
                         <div>
                             <div class="mt-1 pl-1 attr">

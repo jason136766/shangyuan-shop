@@ -17,7 +17,7 @@
         <van-tabbar-item>
             <div class="iconfont cart rounded-circle text-white">&#xe767;</div>
         </van-tabbar-item>
-        <van-tabbar-item>
+        <van-tabbar-item to="found">
             <div class="iconfont">&#xe68e;</div>
             <div class="mt-2 pb-1">发现</div>
         </van-tabbar-item>
