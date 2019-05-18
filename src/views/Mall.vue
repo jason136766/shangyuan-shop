@@ -73,7 +73,7 @@
         </van-row>
 
         <!--商店分类 -->
-        <div class="bg-white ml-3 mr-3 mt-3 text-center pl-2 pr-2 pb-5 font-15 rounded-lg tab">
+        <div class="bg-white ml-3 mr-3 mt-3 text-center pl-2 pr-2 font-15 rounded-lg tab">
             <van-tabs v-model="active" :line-width="lineWidth" color="#64B4FF" title-active-color="#64B4FF" :line-height=lineHeight title-inactive-color="#000" swipe-threshold=6>
                 <van-tab title="享美食">
                     <div class="subtitle mt-2 font-12 overflow-hidden text-left">
@@ -94,50 +94,134 @@
                 <van-tab title="住酒店">住酒店</van-tab>
                 <van-tab title="时尚购">时尚购</van-tab>
             </van-tabs>
-            <van-row>
-                <van-col span="8">
-                    <van-collapse
-                            v-model="merchantType"
-                            :border="borderBool"
-                            class="merchant float-left text-left"
-                    >
-                        <van-collapse-item title="商家类型">
-                            <div>1</div>
-                            <div>2</div>
-                            <div>3</div>
-                        </van-collapse-item>
-                    </van-collapse>
+            <van-row type="flex" justify="space-around" class="font-13 mt-2 mb-2 pb-1">
+                <van-col span="8" class="text-left pl-1">
+                    <div>商家类型 <i class="iconfont align-middle">&#xe729;</i></div>
                 </van-col>
-                <van-col span="8">
-                    <van-collapse
-                            v-model="nearType"
-                            :border="borderBool"
-                            class="near float-left"
-                    >
-                        <van-collapse-item title="附近">
-                            <div>1</div>
-                            <div>2</div>
-                            <div>3</div>
-                        </van-collapse-item>
-                    </van-collapse>
+                <van-col span="6">
+                    <div>附近 <i class="iconfont align-middle">&#xe729;</i></div>
                 </van-col>
-                <van-col span="8">
-                    <van-collapse
-                            v-model="orderType"
-                            :border="borderBool"
-                            class="order float-right"
-                    >
-                        <van-collapse-item title="智能排序">
-                            <div>1</div>
-                            <div>2</div>
-                            <div>3</div>
-                        </van-collapse-item>
-                    </van-collapse>
+                <van-col span="8" class="text-right">
+                    <div>智能排序 <i class="iconfont align-middle">&#xe729;</i></div>
                 </van-col>
             </van-row>
-
-
         </div>
+
+        <!-- 附近商店 -->
+        <div class="mb-5 pb-3 mt-3">
+            <div class="pt-3 pb-2 bg-white ml-3 mr-3 mb-3 merchants rounded-lg">
+                <van-row class="mb-2">
+                    <van-col span="6">
+                        <img src="@/static/images/merchant.png" alt="商店">
+                    </van-col>
+                    <van-col span="13" class="font-10">
+                        <div class="font-14 pl-1">世纪联华</div>
+                        <div>
+                            <div class="mt-1 pl-1 attr">
+                                <span class="mr-1">随时退</span> <span class="mr-1">过期退</span> <span class="mr-1">免预约</span>
+                            </div>
+                            <div class="mt-1">
+                                <van-rate
+                                    :value=3.5
+                                    allow-half
+                                    void-icon="star"
+                                    readonly
+                                    class="d-inline-block"
+                                    :size=11
+                                />
+                                <span>4.0分</span>
+                            </div>
+
+                        </div>
+                        <div class="pl-1">月销量 21 单</div>
+                    </van-col>
+                    <van-col span="5" class="font-10 text-white text-center tip">
+                        <div class="text-right">
+                            <span class="bg-warning rounded">超市</span>
+                        </div>
+                        <div class="text-right mt-2">
+                            <span class="bg-danger rounded">返零钱</span>
+                        </div>
+                        <div class="text-dark text-right mt-1">876m</div>
+                    </van-col>
+                </van-row>
+            </div>
+            <div class="pt-3 pb-2 bg-white ml-3 mr-3 mb-3 merchants rounded-lg">
+                <van-row class="mb-2">
+                    <van-col span="6">
+                        <img src="@/static/images/merchant.png" alt="商店">
+                    </van-col>
+                    <van-col span="13" class="font-10">
+                        <div class="font-14 pl-1">世纪联华</div>
+                        <div>
+                            <div class="mt-1 pl-1 attr">
+                                <span class="mr-1">随时退</span> <span class="mr-1">过期退</span> <span class="mr-1">免预约</span>
+                            </div>
+                            <div class="mt-1">
+                                <van-rate
+                                        :value=3.5
+                                        allow-half
+                                        void-icon="star"
+                                        readonly
+                                        class="d-inline-block"
+                                        :size=11
+                                />
+                                <span>4.0分</span>
+                            </div>
+
+                        </div>
+                        <div class="pl-1">月销量 21 单</div>
+                    </van-col>
+                    <van-col span="5" class="font-10 text-white text-center tip">
+                        <div class="text-right">
+                            <span class="bg-warning rounded">超市</span>
+                        </div>
+                        <div class="text-right mt-2">
+                            <span class="bg-danger rounded">返零钱</span>
+                        </div>
+                        <div class="text-dark text-right mt-1">876m</div>
+                    </van-col>
+                </van-row>
+            </div>
+            <div class="pt-3 pb-2 bg-white ml-3 mr-3 mb-3 merchants rounded-lg">
+                <van-row class="mb-2">
+                    <van-col span="6">
+                        <img src="@/static/images/merchant.png" alt="商店">
+                    </van-col>
+                    <van-col span="13" class="font-10">
+                        <div class="font-14 pl-1">世纪联华</div>
+                        <div>
+                            <div class="mt-1 pl-1 attr">
+                                <span class="mr-1">随时退</span> <span class="mr-1">过期退</span> <span class="mr-1">免预约</span>
+                            </div>
+                            <div class="mt-1">
+                                <van-rate
+                                        :value=3.5
+                                        allow-half
+                                        void-icon="star"
+                                        readonly
+                                        class="d-inline-block"
+                                        :size=11
+                                />
+                                <span>4.0分</span>
+                            </div>
+
+                        </div>
+                        <div class="pl-1">月销量 21 单</div>
+                    </van-col>
+                    <van-col span="5" class="font-10 text-white text-center tip">
+                        <div class="text-right">
+                            <span class="bg-warning rounded">超市</span>
+                        </div>
+                        <div class="text-right mt-2">
+                            <span class="bg-danger rounded">返零钱</span>
+                        </div>
+                        <div class="text-dark text-right mt-1">876m</div>
+                    </van-col>
+                </van-row>
+            </div>
+        </div>
+
     </div>
 </template>
 
@@ -221,6 +305,16 @@
             color:#64B4FF;
             background-color: #B8DDFF;
             border-radius:0.3rem;
+        }
+    }
+    .merchants{
+        .tip{
+            span{
+                padding: 2px 5px;
+            }
+        }
+        .attr{
+            color:#1A8EF1
         }
     }
 
