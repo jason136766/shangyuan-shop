@@ -10,14 +10,14 @@
             <div class="iconfont">&#xe677;</div>
             <div class="mt-2 pb-1">首页</div>
         </van-tabbar-item>
-        <van-tabbar-item to="mall">
+        <van-tabbar-item to="/mall">
             <div class="iconfont">&#xe642;</div>
             <div class="mt-2 pb-1">商圈</div>
         </van-tabbar-item>
         <van-tabbar-item>
             <div class="iconfont cart rounded-circle text-white">&#xe767;</div>
         </van-tabbar-item>
-        <van-tabbar-item to="found">
+        <van-tabbar-item to="/found">
             <div class="iconfont">&#xe68e;</div>
             <div class="mt-2 pb-1">发现</div>
         </van-tabbar-item>
@@ -40,6 +40,7 @@
         watch: {
           '$route'(to) {
               this.active = to.meta.index
+              // console.log(this.active)
           }
         },
     }

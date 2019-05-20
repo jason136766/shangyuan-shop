@@ -1,7 +1,7 @@
 <template>
     <div class="bg-light found">
         <header>
-            <van-row class="text-white top" type="flex" justify="space-around">
+            <van-row class="text-white top pl-1 pr-1" type="flex" justify="space-around">
                 <van-col span="2" class="code text-right"><i class="iconfont rounded-circle icon font-20">&#xe600;</i></van-col>
                 <van-col span="20" class="middle-search">
                     <van-search

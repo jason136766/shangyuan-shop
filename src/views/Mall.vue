@@ -74,7 +74,15 @@
 
         <!--商店分类 -->
         <div class="bg-white ml-3 mr-3 mt-3 text-center pl-2 pr-2 font-15 rounded-lg tab">
-            <van-tabs v-model="active" :line-width="lineWidth" color="#64B4FF" title-active-color="#64B4FF" :line-height=lineHeight title-inactive-color="#000" swipe-threshold=6>
+            <van-tabs
+                v-model="active"
+                :line-width="lineWidth"
+                color="#64B4FF"
+                title-active-color="#64B4FF"
+                :line-height=lineHeight
+                title-inactive-color="#000"
+                :swipe-threshold=6
+            >
                 <van-tab title="享美食">
                     <div class="subtitle mt-2 font-12 overflow-hidden text-left">
                         <div class="swipe overflow-auto">
