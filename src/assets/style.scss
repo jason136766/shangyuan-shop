@@ -44,6 +44,7 @@
 
 /*---- 商圈 ---*/
 .mall {
+  overflow: hidden;
   header{
     .van-field__control,.van-field__control::placeholder{
       font-weight: bold;

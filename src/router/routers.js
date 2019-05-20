@@ -22,7 +22,16 @@ export default [
         name: 'Found',
         component: () => import('@/views/Found'),
         meta: {
-            index: 2,
+            index: 3,
+            showFooter: true,
+        }
+    },
+    {
+        path: '/my',
+        name: 'My',
+        component: () => import('@/views/My'),
+        meta: {
+            index: 4,
             showFooter: true,
         }
     }
