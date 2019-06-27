@@ -73,7 +73,7 @@
         </van-row>
 
         <!--商店分类 -->
-        <div class="bg-white ml-3 mr-3 mt-3 text-center pl-2 pr-2 font-15 rounded-lg tab">
+        <div class="bg-white ml-3 mr-3 mt-3 text-center pl-2 pr-2 font-15 rounded-top tab">
             <van-tabs
                 v-model="active"
                 :line-width="lineWidth"
@@ -102,19 +102,12 @@
                 <van-tab title="住酒店">住酒店</van-tab>
                 <van-tab title="时尚购">时尚购</van-tab>
             </van-tabs>
-            <van-row type="flex" justify="space-around" class="font-13 mt-2 mb-2 pb-1">
-                <van-col span="8" class="text-left pl-1">
-                    <div>商家类型 <i class="iconfont align-middle">&#xe729;</i></div>
-                </van-col>
-                <van-col span="6">
-                    <div>附近 <i class="iconfont align-middle">&#xe729;</i></div>
-                </van-col>
-                <van-col span="8" class="text-right">
-                    <div>智能排序 <i class="iconfont align-middle">&#xe729;</i></div>
-                </van-col>
-            </van-row>
         </div>
-
+        <van-dropdown-menu class="ml-3 mr-3 rounded-bottom cate-nav pb-1">
+            <van-dropdown-item v-model="storeTypeSwitch" :options="storeOption"/>
+            <van-dropdown-item v-model="nearSwitch" :options="nearOption"/>
+            <van-dropdown-item v-model="sortSwitch" :options="sortOption"/>
+        </van-dropdown-menu>
         <!-- 附近商店 -->
         <div class="mb-5 pb-3 mt-3">
             <div class="pt-3 pb-2 bg-white ml-3 mr-3 mb-3 merchants rounded-lg">
@@ -250,10 +243,24 @@
                     require('@/static/images/banner-5.png'),
                     require('@/static/images/banner-5.png')
                 ],
-                merchantType: ['1', '2', '3'],
-                nearType: ['1', '2', '3'],
-                orderType: ['1', '2', '3'],
-                borderBool: false
+                storeTypeSwitch: 0,
+                storeOption: [
+                    { text: '全部商品', value: 0 },
+                    { text: '新款商品', value: 1 },
+                    { text: '活动商品', value: 2 }
+                ],
+                nearSwitch: 0,
+                nearOption: [
+                    { text: '全部商品', value: 0 },
+                    { text: '新款商品', value: 1 },
+                    { text: '活动商品', value: 2 }
+                ],
+                sortSwitch: 0,
+                sortOption: [
+                    { text: '全部商品', value: 0 },
+                    { text: '新款商品', value: 1 },
+                    { text: '活动商品', value: 2 }
+                ],
             }
         }
     }
@@ -325,5 +332,12 @@
             color:#1A8EF1
         }
     }
-
+    .cate-nav {
+        height: 35px;
+        border-top: none;
+        justify-content: space-between;
+    }
+    .van-hairline--top-bottom::after {
+        border-top: none;
+    }
 </style>
