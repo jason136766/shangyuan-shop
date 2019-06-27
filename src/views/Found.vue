@@ -2,7 +2,8 @@
     <div class="bg-light found">
         <header>
             <van-row class="text-white top pl-2 pr-2" type="flex" justify="space-around">
-                <van-col span="2" class="code text-right"><i class="iconfont rounded-circle icon font-20">&#xe600;</i></van-col>
+                <van-col span="2" class="code text-right"><i class="iconfont rounded-circle icon font-20">&#xe600;</i>
+                </van-col>
                 <van-col span="20" class="middle-search">
                     <van-search
                             shape="round"
@@ -14,9 +15,10 @@
                         </div>
                     </van-search>
                 </van-col>
-                <van-col span="2" class="msg text-left"><i class="iconfont rounded-circle icon font-20">&#xe763;</i></van-col>
+                <van-col span="2" class="msg text-left"><i class="iconfont rounded-circle icon font-20">&#xe763;</i>
+                </van-col>
             </van-row>
-            
+
             <div class="head-bg"><img src="@/static/images/found-head-bg.png" alt="" width="100%" height="auto"></div>
         </header>
 
@@ -41,26 +43,33 @@
                     </van-col>
                     <van-col span="24" class="mt-1 font-14">真想拜倒在世姐这一双美腿下，根本不需要高跟鞋的加持。</van-col>
                     <van-col span="8" class="mb-2">
-                        <img src="@/static/images/found-dynamic.png" alt="" class="rounded-lg" width="100%" height="auto">
+                        <img src="@/static/images/found-dynamic.png" alt="" class="rounded-lg" width="100%"
+                             height="auto">
                     </van-col>
                     <van-col span="8" class="mb-2">
-                        <img src="@/static/images/found-dynamic-2.png" alt="" class="rounded-lg" width="100%" height="auto">
+                        <img src="@/static/images/found-dynamic-2.png" alt="" class="rounded-lg" width="100%"
+                             height="auto">
                     </van-col>
                     <van-col span="8" class="mb-2">
-                        <img src="@/static/images/found-dynamic-2.png" alt="" class="rounded-lg" width="100%" height="auto">
+                        <img src="@/static/images/found-dynamic-2.png" alt="" class="rounded-lg" width="100%"
+                             height="auto">
                     </van-col>
                     <van-col span="8" class="mb-2">
-                        <img src="@/static/images/found-dynamic-2.png" alt="" class="rounded-lg" width="100%" height="auto">
+                        <img src="@/static/images/found-dynamic-2.png" alt="" class="rounded-lg" width="100%"
+                             height="auto">
                     </van-col>
                     <van-col span="8" class="mb-2">
-                        <img src="@/static/images/found-dynamic-2.png" alt="" class="rounded-lg" width="100%" height="auto">
+                        <img src="@/static/images/found-dynamic-2.png" alt="" class="rounded-lg" width="100%"
+                             height="auto">
                     </van-col>
                     <van-col span="8" class="mb-2">
-                        <img src="@/static/images/found-dynamic-2.png" alt="" class="rounded-lg" width="100%" height="auto">
+                        <img src="@/static/images/found-dynamic-2.png" alt="" class="rounded-lg" width="100%"
+                             height="auto">
                     </van-col>
                     <van-row class="font-10 text-bbb pl-1 pr-2">
                         <van-col span="6">15.8万次阅读</van-col>
-                        <van-col span="5" offset="3" class="text-right"><i class="iconfont font-12">&#xe6ff;</i> 分享</van-col>
+                        <van-col span="5" offset="3" class="text-right"><i class="iconfont font-12">&#xe6ff;</i> 分享
+                        </van-col>
                         <van-col span="5" class="text-right"><i class="iconfont font-12">&#xe64c;</i> 评论30</van-col>
                         <van-col span="5" class="text-right"><i class="iconfont font-12">&#xe62b;</i> 点赞50</van-col>
                     </van-row>
@@ -78,17 +87,21 @@
                     </van-col>
                     <van-col span="24" class="mt-1 font-14">真想拜倒在世姐这一双美腿下，根本不需要高跟鞋的加持。</van-col>
                     <van-col span="8" class="mb-2">
-                        <img src="@/static/images/found-dynamic.png" alt="" class="rounded-lg" width="100%" height="auto">
+                        <img src="@/static/images/found-dynamic.png" alt="" class="rounded-lg" width="100%"
+                             height="auto">
                     </van-col>
                     <van-col span="8" class="mb-2">
-                        <img src="@/static/images/found-dynamic-2.png" alt="" class="rounded-lg" width="100%" height="auto">
+                        <img src="@/static/images/found-dynamic-2.png" alt="" class="rounded-lg" width="100%"
+                             height="auto">
                     </van-col>
                     <van-col span="8" class="mb-2">
-                        <img src="@/static/images/found-dynamic-2.png" alt="" class="rounded-lg" width="100%" height="auto">
+                        <img src="@/static/images/found-dynamic-2.png" alt="" class="rounded-lg" width="100%"
+                             height="auto">
                     </van-col>
                     <van-row class="font-10 text-bbb pl-1 pr-2">
                         <van-col span="6">15.8万次阅读</van-col>
-                        <van-col span="5" offset="3" class="text-right"><i class="iconfont font-12">&#xe6ff;</i> 分享</van-col>
+                        <van-col span="5" offset="3" class="text-right"><i class="iconfont font-12">&#xe6ff;</i> 分享
+                        </van-col>
                         <van-col span="5" class="text-right"><i class="iconfont font-12">&#xe64c;</i> 评论30</van-col>
                         <van-col span="5" class="text-right"><i class="iconfont font-12">&#xe62b;</i> 点赞50</van-col>
                     </van-row>
@@ -109,30 +122,37 @@
         background-color: rgba(255, 255, 255, 0.2);
         margin-top: 3px;
     }
-    .found{
+
+    .found {
         min-height: 780px;
     }
-    .top{
+
+    .top {
         position: relative;
         z-index: 1;
         line-height: 65px;
     }
-    .head-bg{
+
+    .head-bg {
         width: 100%;
         position: absolute;
-        top:0;
+        top: 0;
     }
-    .active{
+
+    .active {
         border-bottom: #fff 1px solid;
     }
-    .entry{
+
+    .entry {
         border-radius: 0.5rem;
-        .name{
-            color:#DDBA76
+
+        .name {
+            color: #DDBA76
         }
     }
-    @media (max-width: 360px){
-        .found .top{
+
+    @media (max-width: 360px) {
+        .found .top {
             padding: 0 1rem !important;
         }
     }

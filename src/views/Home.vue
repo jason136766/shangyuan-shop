@@ -37,7 +37,7 @@
 
         <!-- 优惠券 -->
         <div class="text-center">
-            <img src="@/static/images/coupon.png" alt="优惠券" width="92%" height="auto" >
+            <img src="@/static/images/coupon.png" alt="优惠券" width="92%" height="auto">
         </div>
 
         <!-- 秒杀商品 -->
@@ -134,7 +134,8 @@
         <RecommendGoods/>
 
         <!-- 广告3区域 -->
-        <div class="pr-3 pl-3 mt-2 mb-3"><img src="@/static/images/banner-3.png" alt="广告3" width="100%" height="auto"></div>
+        <div class="pr-3 pl-3 mt-2 mb-3"><img src="@/static/images/banner-3.png" alt="广告3" width="100%" height="auto">
+        </div>
 
         <!-- 推荐商品 -->
         <RecommendGoods/>
@@ -143,7 +144,8 @@
         <div class="pr-3 pl-3 mt-2"><img src="@/static/images/banner-2.png" alt="广告2" width="100%" height="auto"></div>
 
         <!-- 商品分类 -->
-        <van-tabs class="mt-3 pr-3 pl-3 font-13 goods-tab mb-5" swipeable animated :line-height=lineHeight color="#4DA9FF" title-active-color="#4DA9FF">
+        <van-tabs class="mt-3 pr-3 pl-3 font-13 goods-tab mb-5" swipeable animated :line-height=lineHeight
+                  color="#4DA9FF" title-active-color="#4DA9FF">
             <van-tab title="全部">
                 <van-row class="pt-2 pb-2" gutter="6">
                     <van-col span="12" class="mb-2 good">
@@ -225,12 +227,13 @@
     import HeaderBanner from '@/components/HeaderBanner'
     import RecommendGoods from '@/components/RecommendGoods'
     import Footer from '@/components/layouts/Footer'
+
     export default {
         name: "Home",
         components: {
-          HeaderBanner,
-          RecommendGoods,
-          Footer,
+            HeaderBanner,
+            RecommendGoods,
+            Footer,
 
         },
         data() {
@@ -242,11 +245,11 @@
                     require('@/static/images/swipe-banner.png')
                 ],
                 categorys: [
-                    { url:require('@/static/images/category.png'),name:'平台自营' },
-                    { url:require('@/static/images/category.png'),name:'平台自营' },
-                    { url:require('@/static/images/category.png'),name:'平台自营' },
-                    { url:require('@/static/images/category.png'),name:'平台自营' },
-                    { url:require('@/static/images/category.png'),name:'平台自营' },
+                    {url: require('@/static/images/category.png'), name: '平台自营'},
+                    {url: require('@/static/images/category.png'), name: '平台自营'},
+                    {url: require('@/static/images/category.png'), name: '平台自营'},
+                    {url: require('@/static/images/category.png'), name: '平台自营'},
+                    {url: require('@/static/images/category.png'), name: '平台自营'},
                 ],
             }
         },
@@ -254,24 +257,40 @@
 </script>
 
 <style scoped lang="scss">
-    header{
+    header {
         font-size: 0.8rem !important;
-        border-bottom-right-radius:10px;
-        border-bottom-left-radius:10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
         height: 210px;
         background: #C771FF;
         padding: 8px 0;
-        .van-search{
-            padding:3px 0;
+
+        .van-search {
+            padding: 3px 0;
         }
-        .van-search__content,.search{
-            background-color: rgba(255,255,255,0.4);
+
+        .van-search__content, .search {
+            background-color: rgba(255, 255, 255, 0.4);
         }
     }
-    .seckill-title{color:#FE4070}
-    .recommend-title{color: #428FE7}
-    .more-seckill{color: #FE4070;border: #FE4070 1px solid}
-    .recommend-more{
-        span{position: relative;bottom:0.1rem}
+
+    .seckill-title {
+        color: #FE4070
+    }
+
+    .recommend-title {
+        color: #428FE7
+    }
+
+    .more-seckill {
+        color: #FE4070;
+        border: #FE4070 1px solid
+    }
+
+    .recommend-more {
+        span {
+            position: relative;
+            bottom: 0.1rem
+        }
     }
 </style>
